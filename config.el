@@ -128,4 +128,8 @@
 (assoc-delete-all "Open private configuration" +doom-dashboard-menu-sections)
 (assoc-delete-all "Open documentation" +doom-dashboard-menu-sections)
 ;; TODO: theme the icons and maybe hook different actions in the menu
-;;(blink-cursor-mode)
+(blink-cursor-mode)
+(setq gdb-many-windows 1)
+(+word-wrap-mode)
+(setq gdb-restore-window-configuration-after-quit t)
+(setq default-directory "~/Dev/")
