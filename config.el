@@ -32,7 +32,10 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-henna)
+;; doom-one
+;; tshd-light
+;; catpuccin
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -130,6 +133,9 @@
 ;; TODO: theme the icons and maybe hook different actions in the menu
 (blink-cursor-mode)
 (setq gdb-many-windows 1)
-(+word-wrap-mode)
+(setq +word-wrap-mode 1)
 (setq gdb-restore-window-configuration-after-quit t)
 (setq default-directory "~/Dev/")
+(global-hl-line-mode 1)
+;;(setq catppuccin-flavor 'mocha) ;; or 'latte, 'macchiato, or 'mocha
+;;(catppuccin-reload)
